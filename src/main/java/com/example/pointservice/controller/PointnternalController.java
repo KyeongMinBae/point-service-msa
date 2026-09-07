@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/points")
-public class PointController {
+@RequestMapping("/internal/points")
+public class PointnternalController {
 
     private final PointService pointService;
 
-    public PointController(PointService pointService) {
+    public PointnternalController(PointService pointService) {
         this.pointService = pointService;
     }
 
